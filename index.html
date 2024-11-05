@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dialog</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/header-img.png" height="300px"  width="350px"  class="img-header" alt="coding"/>
+<div>
+    <h1 class="header-text">Here are the best classes👍</h1>
+    <img src="./img/qr-code.jpg"  height="300px"  width="350px" class="img-qr-code" alt="QR Code"/>
+    <p class="qr-code-description">
+        Scan the QR code to know more about the class.🤟
+    </p>
+</div>
+    </div>
+    <button type="button" class="btn" onclick="openModal()"> Enroll Now</button>
+
+<div class="overlay" id="overlay">
+<div class="modal">
+    <img src="./img/close-img.png" class="close-icon" alt="close" onclick="closeModal()"/>
+
+    <form class="form">
+        <input
+        type="text"
+        placeholder="Enter your name"
+        class="form-input"
+        />
+
+        <input
+        type="email"
+        placeholder="Enter your email"
+        class="form-input"
+        />
+
+        <input 
+        type="text"
+        placeholder="Enter your phone number"
+        class="form-input"
+        />
+
+        <input 
+        type="text"
+        placeholder="College/School Name"
+        class="form-input"
+        />
+    </form>
+
+    <button type="button" class="btn">
+       Proceed to payment
+    </button>
+    </div>     
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
